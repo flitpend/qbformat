@@ -10,8 +10,8 @@ https://github.com/jgm/pandoc/releases/latest
 若文件夹中有多个 txt 文件，程序将逐一生成对应的 Word 文档。
 
 ### 格式标记
-通过类似markdown的语法进行格式标记：
-```markdown
+通过类似 markdown 的语法进行格式标记：
+```
 没有井号：正文「仿宋_GB2312，三号，两端对齐」
 # 一个井号：一级标题「黑体，三号，编号格式：一、二、三、」
 ## 两个井号：二级标题「楷体_GB2312，三号，编号格式：（一）（二）（三）」
@@ -22,7 +22,7 @@ https://github.com/jgm/pandoc/releases/latest
 ####### 七个井号：落款「仿宋_GB2312，三号，右对齐，用于写部门和日期」
 **加粗正文**
 <br> 表示 line break，强制添加一个空行
-&nbsp; 表示 non-breaking space，强制添加一个空格（包括前后英文的&和;）
+&nbsp; 表示 non-breaking space，强制添加一个空格（包括前后英文的 & 和 ;）
 ```
 
 注：
