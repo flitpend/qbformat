@@ -6,7 +6,7 @@ https://github.com/jgm/pandoc/releases/latest
 
 ## 使用方法
 在文件夹内新建 txt 文件，文件名自取，或者直接修改 example.txt（推荐）。在 txt 文件中写好签报内容，用后文所述格式来标记每一行，无须关心字体、空行、缩进、编号等段落格式。
-保存后双击运行文件夹内的 qbgen.bat，程序将自动对各级标题编号，并按常见签报格式要求生成 Word 文档（docx 格式），文件名与 txt 文件名相同。
+保存后双击运行文件夹内的`qbgen.bat`（Windows）或在 Terminal 中运行`perl qbgen.pl`（Mac 或 Linux），程序将自动对各级标题编号，并按常见签报格式要求生成 Word 文档（docx 格式），文件名与 txt 文件名相同。
 若文件夹中有多个 txt 文件，程序将逐一生成对应的 Word 文档。
 
 ## 格式标记

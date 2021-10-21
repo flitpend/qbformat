@@ -116,7 +116,13 @@ EXIT /B 0
 :main
 FOR %%a IN (*.txt) DO (
     SET txtfilename=%%~na
-    call :format
+    SET /A h1=1
+    SET /A h2=1
+    SET /A h3=1
+    SET /A h4=1
+
+    CALL :format
+
     pandoc -o !txtfilename!.docx !txtfilename!_temp.txt --reference-doc t.docx
     DEL !txtfilename!_temp.txt
 )
