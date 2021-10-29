@@ -28,8 +28,6 @@ sub process_file {
     close $rfh;
 
     my $wfilename = basename(@_, '.txt') . '_temp.txt';
-
-
     open my $wfh, '>>', $wfilename;
     for my $line (@lines) {
         chomp($line);
@@ -86,5 +84,6 @@ sub main() {
         unlink "${filename}_temp.txt" or warn "Could not unlink temp file ${filename}_temp.txt: $!\n";
     }
 }
+
 
 main();
