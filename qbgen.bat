@@ -106,6 +106,12 @@ REM Get the rest of the line
         SET /A h4+=1
         SET line=!ht4!!restofline!
     )
+    IF !firstword!==###### (
+        SET "indicator=!restofline:~0,3!"
+        IF NOT !indicator!==附件： (
+            SET "line=######## !restofline!"
+        )
+    )
 
     ECHO !line! >> !txtfilename!_temp.txt
     ECHO. >> !txtfilename!_temp.txt
