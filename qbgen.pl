@@ -61,6 +61,16 @@ sub process_file {
             next;
         }
 
+        # Attachments
+        if ($line =~ m/^######\s+附件：/) {
+            print $wfh "$line\n\n";
+            next;
+        }
+        if ($line =~ m/^######\s+(?!附件：)/) {
+            print $wfh join('', '######## ', "$'\n\n");
+            next;
+        }
+
         print $wfh "$line\n\n";
     }
     close $wfh;
