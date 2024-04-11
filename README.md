@@ -1,5 +1,7 @@
-# qbgen: 签报格式生成器
-
+# qbgen: 签报格式化工具
+## 背景
+在央国企、事业单位和其他单位工作的朋友常会遇到根据 GB/T 9704-2012 格式标准写签报等公文的要求。部分对格式要求极为苛刻的单位会导致员工日常工作中花费大量时间精力重复调整文件格式。
+本工具提供了一个基础模版，可将类 markdown 格式的 txt 文件生成为基本满足格式要求的 Word 文档。
 ## 准备工作
 使用前需安装 Pandoc，请移步 Pandoc 项目官方 Github 下载最新 release：
 https://github.com/jgm/pandoc/releases/latest
