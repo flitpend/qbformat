@@ -1,4 +1,4 @@
-# qbgen: 签报格式化工具
+# qbformat: 签报格式化工具
 ## 背景
 在央国企、事业单位和其他单位工作的朋友常会遇到根据 GB/T 9704-2012 格式标准写签报等公文的要求。部分对格式要求极为苛刻的单位会导致员工日常工作中花费大量时间精力重复调整文件格式。
 本工具提供了一个基础模版，可将类 markdown 格式的 txt 文件生成为基本满足格式要求的 Word 文档。
@@ -8,7 +8,7 @@ https://github.com/jgm/pandoc/releases/latest
 
 ## 使用方法
 在文件夹内新建 txt 文件，文件名自取，或者直接修改 example.txt（推荐）。在 txt 文件中写好签报内容，用后文所述格式来标记每一行，无须关心字体、空行、缩进、编号等段落格式。
-保存后双击运行文件夹内的`qbgen.bat`（Windows）或在 Terminal 中运行`perl qbgen.pl`（Mac 或 Linux），程序将自动对各级标题编号，并按常见签报格式要求生成 Word 文档（docx 格式），文件名与 txt 文件名相同。
+保存后双击运行文件夹内的`qbformat.bat`（Windows）或在 Terminal 中运行`perl qbformat.pl`（Mac 或 Linux），程序将自动对各级标题编号，并按常见签报格式要求生成 Word 文档（docx 格式），文件名与 txt 文件名相同。
 若文件夹中有多个 txt 文件，程序将逐一生成对应的 Word 文档。
 
 ## 格式标记
